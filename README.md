@@ -2,21 +2,21 @@
 
 # Student Report Card System
 
-A Python console application built as part of a Python & AI internship at unprof task (Day 1 – OOP: Classes & Objects).
+Python console app for Day 1 of Python Intermediate internship task — OOP basics (Classes & Objects).
 
 ## Features
 
-- Add student details (name, roll number)
-- Add or update subject grades
-- Display a formatted report card with average marks and an overall letter grade
-- Supports honors students with scholarship info via inheritance
+- Add a new student (name, roll number)
+- Add a grade for a subject
+- Update a grade for an existing subject
+- Display report card (total, average, pass/fail)
 
-## OOP Concepts Demonstrated
+## Concepts Used
 
-- **Classes & Objects** – `Student` is the base class; objects are created from it via the interactive menu
-- **`__init__` constructor** – initializes name, roll number, and an empty grades dictionary
-- **Methods** – `add_grade()`, `update_grade()`, `calculate_average()`, `display_report_card()`
-- **Inheritance** – `HonorsStudent` extends `Student` using `super()`, adding scholarship details on top of the base functionality
+- Class and Object (`Person`, `Student`)
+- `__init__` constructor
+- Methods (`add_grade`, `update_grade`, `display_report_card`)
+- Inheritance (`Student` inherits from `Person` using `super()`)
 
 ## How to Run
 
@@ -24,12 +24,14 @@ A Python console application built as part of a Python & AI internship at unprof
 python3 report-card.py
 ```
 
-Follow the on-screen menu to add a student, add/update grades, and view the report card.
+Enter the student's name and roll number, then use the menu to add/update grades and view the report card.
 
-## Project Structure
+## Example Menu
 
 ```
-.
-├── report-card.py
-└── README.md
+1. Add Grade
+2. Update Grade
+3. Display Report Card
+4. Exit
 ```
+
